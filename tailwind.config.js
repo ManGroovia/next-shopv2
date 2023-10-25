@@ -20,15 +20,14 @@ module.exports = {
       },
       colors: {
         main: "#ECF4FF",
-        gradient: {
-          violet: "linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%)",
-        },
+        
         primary: {
           DEFAULT: "#E43030",
           orange: "#D48D3B",
           green: "rgb(6, 153, 6)",
           border: "#e4e7ee",
           blue: "#0d63f3",
+          grad: "",
         },
         secondary: "#282828",
         "gray-200": "#EAECF0",

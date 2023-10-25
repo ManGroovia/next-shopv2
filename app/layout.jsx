@@ -4,6 +4,7 @@ import { Inter, Space_Grotesk, Roboto } from "next/font/google";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import React from "react";
 import Providers from "@/redux/Provider";
+import { Footer } from "@/components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -23,14 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-main  ${spaceGrotesk.className}`}>
-       <Providers>
+        <Providers>
           <header className="shadow-md bg-opacity-60 bg-white h-[55px]">
             <Header />
           </header>
           <HeroCarousel />
 
           <main className="max-w-10xl mx-auto bg-main  ">{children}</main>
-          </Providers>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -37,7 +37,7 @@ export const HeroCarousel = () => {
             alt={image.alt}
             width={484}
             height={484}
-            className=" h-[300px] mt-4  "
+            className=" h-[300px] mt-4 rounded-[10px]  "
             key={image.alt}
           />
         ))}
